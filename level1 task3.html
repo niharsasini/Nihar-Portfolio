@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(45deg,#0a0a0a,#3a4452);
+        }
+        .center{
+            text-align: center;
+            color: white;
+        }
+        .container{
+            border: 1px solid #717377;
+            border-radius: 16px;
+            background: transparent;
+            box-shadow: 0px 3px 15px rgba(113, 115,119, 0.5);
+
+        }
+        .flex{
+            display: flex;
+        } 
+        .col{
+            flex-direction: column;
+        }
+        .item{
+            align-items: center;
+            justify-content: center;
+        }
+        .row{
+            margin: 8px  0;
+
+        } 
+        .input{
+            width: 291px;
+            font-size: 20px;
+            margin: 0;
+            padding: 10px 0px;
+            border:none;
+            background: transparent;
+            box-shadow: 0px 3px 15px rgba(246, 241, 241, 0.1);
+            border-radius: 5px;
+            text-align: right;
+            padding-right: 5px;
+            color: white;
+        }
+        .auto{
+            margin: auto;
+        }       
+        .button{
+            width: 66px;
+            height: 66px;
+            padding:20px ;
+            margin: 0 3px;
+            border: none;
+            border-radius: 50%;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: -8px -8px 15px rgba(255,255,255,0.1);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="center">Calculate Me</h1>
+    <div class="container  auto flex col item ">
+        <div class="row">
+            <input class="input" type="text">
+        </div>
+        <div class="row">
+            <button class="button">C</button>
+            <button class="button">%</button>
+            <button class="button">X</button>
+            <button class="button">/</button>
+        </div>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">*</button>
+        </div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">-</button>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">+</button>
+        </div>
+        <div class="row">
+            <button class="button">00</button>
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+
+</body>
+</html>
